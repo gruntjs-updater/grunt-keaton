@@ -37,46 +37,47 @@ grunt.initConfig({
 
 ### Options
 
-#### options.separator
+#### options.algorithm
 Type: `String`
-Default value: `',  '`
+Default value: `'sha1'`
 
-A string value that is used to do something with whatever.
+Hash algorithm such as `'sha1'`, `'md5'`, `'sha256'`, etc.
+Note that it must be available on your platform.
 
-#### options.punctuation
-Type: `String`
-Default value: `'.'`
+#### options.length
+Type: `Integer`
+Default value: `3`
 
-A string value that is used to do something else with whatever else.
+The length of the generated hash.
 
 ### Usage Examples
 
 #### Default Options
-In this example, the default options are used to do something with whatever. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result would be `Testing, 1 2 3.`
+Using sha1 algorithm to generate a 3 character hash in ./version.txt
 
 ```js
 grunt.initConfig({
   keaton: {
     options: {},
     files: {
-      'dest/default_options': ['src/testing', 'src/123'],
+      src: ['version.txt']
     },
   },
 });
 ```
 
 #### Custom Options
-In this example, custom options are used to do something else with whatever else. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result in this case would be `Testing: 1 2 3 !!!`
+Using md5 algorithm to generate a six character hash in ./static/version.txt
 
 ```js
 grunt.initConfig({
   keaton: {
     options: {
-      separator: ': ',
-      punctuation: ' !!!',
+      algorithm: 'md5',
+      length: 6,
     },
     files: {
-      'dest/default_options': ['src/testing', 'src/123'],
+      src: ['static/version.txt']
     },
   },
 });
