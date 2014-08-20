@@ -1,0 +1,37 @@
+{
+  "name": "grunt-keaton",
+  "description": "Bust your assets via a hash change in a dedicated one liner version file.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/lecodeur/grunt-keaton",
+  "author": {
+    "name": "Simp’s",
+    "email": "fuzz@mangoweb.net"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lecodeur/grunt-keaton.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lecodeur/grunt-keaton/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/lecodeur/grunt-keaton/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.5"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}
