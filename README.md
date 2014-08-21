@@ -1,10 +1,19 @@
 # grunt-keaton
 
 > Bust your assets via a hash change in a dedicated one liner version file.
+> 
+> For example, load the hash from a version.txt and use it in your generated HTML in your assets paths:  
+```
+  <link rel="stylesheet" href="//assets.domain.tld/a253/css/base.css" />
+  <script src="//assets.domain.tld/a253/js/core.js"></script>
+  …
+```
+>
+> In the Apache conf for your assets subdomain:  
+```
+  RewriteRule ^/[^/]+/(.*)$ /$1 [PT,L]
+```
 
-For example: load the hash from a version.txt and use it in your generated HTML in your assets paths, href="//assets.domain.tld/a253/css/base.css" etc.
-
-In the Apache conf for your subdomain: RewriteRule ^/[^/]+/(.*)$ /$1 [PT,L]
 
 ## Getting Started
 This plugin requires Grunt `~0.4.5`
