@@ -50,14 +50,14 @@ grunt.initConfig({
 ### Options
 
 #### options.algorithm
-Type: `String`
+Type: `String`  
 Default value: `'sha1'`
 
 Hash algorithm such as `'sha1'`, `'md5'`, `'sha256'`, etc.
 Note that it must be available on your platform.
 
 #### options.length
-Type: `Integer`
+Type: `Integer`  
 Default value: `4`
 
 The length of the generated hash.
