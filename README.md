@@ -1,6 +1,8 @@
 # grunt-keaton
 
 > Bust your assets via a hash change in a dedicated one liner version file.
+> For example: load the hash from a version.txt and use it in your generated HTML in your assets paths, href="//assets.domain.tld/a253/css/base.css" etc.
+> In the Apache conf for your subdomain: RewriteRule ^/[^/]+/(.*)$ /$1 [PT,L]
 
 ## Getting Started
 This plugin requires Grunt `~0.4.5`
@@ -46,14 +48,14 @@ Note that it must be available on your platform.
 
 #### options.length
 Type: `Integer`
-Default value: `3`
+Default value: `4`
 
 The length of the generated hash.
 
 ### Usage Examples
 
 #### Default Options
-Using sha1 algorithm to generate a 3 character hash in ./version.txt
+Using sha1 algorithm to generate a four character hash in ./version.txt
 
 ```js
 grunt.initConfig({

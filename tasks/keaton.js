@@ -17,7 +17,7 @@ module.exports = function(grunt) {
     var
       options = this.options({
         algorithm: 'sha1',
-        length: 3
+        length: 4
       }),
       hashString,
       hash = crypto.createHash(options.algorithm),
